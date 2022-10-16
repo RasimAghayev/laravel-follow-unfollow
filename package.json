@@ -5,6 +5,7 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "jquery": "^3.6.1",
         "@popperjs/core": "^2.10.2",
         "@vitejs/plugin-react": "^2.0.0",
         "axios": "^0.27",

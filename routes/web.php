@@ -28,3 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('users', [App\Http\Controllers\HomeController::class, 'users'])->name('users');
+Route::get('user/{id}', [App\Http\Controllers\HomeController::class, 'user'])->name('user.view');
+Route::post('follow', [App\Http\Controllers\HomeController::class, 'follwUserRequest'])->name('follow');
